@@ -90,3 +90,19 @@ const user = mongoose.model("User", userSchema);
 // }).catch((err)=>{
 //   console.log(err);
 // });
+
+
+// user.updateOne({ name : "rohan"}, { age : 25 })
+// .then((res)=>{
+//   console.log(res);
+// }).catch((err)=>{
+//   console.log(err);
+// });
+
+user.findOneAndUpdate({ name : "rohan"}, { age : 30 })
+.then((res)=>{
+  console.log(res);
+}).catch((err)=>{
+  console.log(err);
+});
+
