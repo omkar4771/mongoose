@@ -69,3 +69,24 @@ const user = mongoose.model("User", userSchema);
 // ]).then((res)=>{
 //   console.log(res);
 // });
+
+
+// user.find().then((res)=>{
+//   console.log(res);
+// }).catch((err)=>{
+//   console.log(err);
+// });
+
+// user.find({age : {$gt:23}})
+// .then((res)=>{
+//   console.log(res[0].name);
+// }).catch((err)=>{
+//   console.log(err);
+// });
+
+// user.findById("666eee5ad398df2883f897c4")
+// .then((res)=>{
+//   console.log(res);
+// }).catch((err)=>{
+//   console.log(err);
+// });
