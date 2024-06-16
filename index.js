@@ -42,3 +42,30 @@ const user = mongoose.model("User", userSchema);
 // .catch((err)=>{
 //   console.log(err);
 // });
+
+// inser many 
+
+
+// user.insertMany([
+//   { name : "yash dhumal ",
+//     email : "yashdhumal2820@gmail.com",
+//     age : 24,
+//   },
+//   {
+//     name : "avinash shide",
+//     email:"avishinde@gmail.com",
+//     age : 21,
+//   },
+//   {
+//     name : "suraj gangarde",
+//     email :"surajbhai@gmail.com",
+//     age : 25,
+//   },
+//   {
+//     name : "prasad dhasade",
+//     email : "prasaddhasade@gmail.com",
+//     age : 23
+//   }
+// ]).then((res)=>{
+//   console.log(res);
+// });
