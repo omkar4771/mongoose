@@ -1,11 +1,9 @@
 // getting-started.js
 const mongoose = require('mongoose');
-
 main().then(()=>{
     console.log("connection sucessfull");
 })
 .catch(err => console.log(err));
-
 async function main() {
   await mongoose.connect('mongodb://127.0.0.1:27017/test');
 }
@@ -45,6 +43,12 @@ const user = mongoose.model("User", userSchema);
 //   console.log(err);
 // });
 
+<<<<<<< HEAD
+=======
+// inser many 
+
+
+>>>>>>> 46970df7b8a5bc19c41e8c72a7b0f287e840d4a7
 // user.insertMany([
 //   { name : "yash dhumal ",
 //     email : "yashdhumal2820@gmail.com",
@@ -69,6 +73,10 @@ const user = mongoose.model("User", userSchema);
 //   console.log(res);
 // });
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 46970df7b8a5bc19c41e8c72a7b0f287e840d4a7
 // user.find().then((res)=>{
 //   console.log(res);
 // }).catch((err)=>{
@@ -89,6 +97,10 @@ const user = mongoose.model("User", userSchema);
 //   console.log(err);
 // });
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 46970df7b8a5bc19c41e8c72a7b0f287e840d4a7
 // user.updateOne({ name : "rohan"}, { age : 25 })
 // .then((res)=>{
 //   console.log(res);
@@ -96,6 +108,7 @@ const user = mongoose.model("User", userSchema);
 //   console.log(err);
 // });
 
+<<<<<<< HEAD
 // user.findOneAndUpdate({ name : "rohan"}, { age : 35 }, {new : true})
 // .then((res)=>{
 //   console.log(res);
@@ -110,7 +123,15 @@ const user = mongoose.model("User", userSchema);
 // });
 
 user.findByIdAndDelete("666f045fe43abbdb35fd7982").then((res)=>{
+=======
+user.findOneAndUpdate({ name : "rohan"}, { age : 30 })
+.then((res)=>{
+>>>>>>> 46970df7b8a5bc19c41e8c72a7b0f287e840d4a7
   console.log(res);
 }).catch((err)=>{
   console.log(err);
 });
+<<<<<<< HEAD
+=======
+
+>>>>>>> 46970df7b8a5bc19c41e8c72a7b0f287e840d4a7
